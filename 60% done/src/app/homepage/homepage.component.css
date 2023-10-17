@@ -1,0 +1,140 @@
+.card {
+    border: 2px solid #a6db42;
+    height: 220px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: white;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: 18px;
+}
+
+.card .account {
+    margin-left: 40%;
+    height: 50px;
+    margin-bottom: 15%;
+    margin-top: -5%;
+    /* Adjust the margin-bottom to move the image up */
+
+    /* Centers the image horizontally within the card */
+}
+
+.navbar .nav {
+    height: 30px;
+}
+
+.card a.btn-primary {
+    display: block;
+    background-color: #108507;
+    margin-top: 10px;
+    border: #a8cd22;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Optional: Add margin to the cards for spacing */
+.card-container {
+    height: 480px;
+
+}
+
+/* Custom CSS for the navbar */
+.navbar {
+    background-color: rgba(247, 253, 159, 0.877);
+    /* Navbar background color */
+}
+
+.navbar-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    /* Adjust the margin as needed */
+}
+
+.navbar-icon i {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+}
+
+.navbar-brand {
+    color: #030303;
+    /* Navbar brand color */
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    /* Navbar brand color on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    /* Navbar links color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7f7f7;
+    /* Navbar links color on hover */
+}
+
+.navbar-toggler {
+    border-color: #fff;
+    /* Navbar toggler color */
+}
+
+/* .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;...');
+    /* Custom navbar toggler icon if needed */
+
+
+*/
+
+/* Add padding to navbar items */
+.navbar-nav {
+    padding-right: 15px;
+}
+
+/* Center the navbar items */
+.navbar-nav.ml-auto {
+    margin-right: 0;
+}
+
+/* Add some space between navbar items */
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+/* Add hover effect to the card */
+.card:hover {
+    border-color: #0a3816;
+    /* Border color on hover */
+    box-shadow: 0 10px 15px #c1ed24;
+    /* Box shadow on hover */
+}
+
+/* Change card title color on hover */
+.card:hover .card-title {
+    color: #073a14;
+}
+
+/* Change button color on hover */
+.card:hover a.btn-primary {
+    background-color: #0ecb4d;
+    border-color: #b0d010;
+    color: #fff;
+}
+
+/* Optional: Adjust margins for better spacing on hover */
+.card:hover {
+    margin-top: 90px;
+    margin-bottom: 110px;
+}

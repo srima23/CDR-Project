@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-s0Oz0s9m/3MUurZ/nlvTc9Vj3sMjvd1/X3IYhbwgAGyxT+Uh5tuW8F7aFj8fG2wzOow8lQrMQwMdIn9jAGcZLO6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Homepage</title>
+</head>
+
+<body style="background-color: #043822;">
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img class=nav src="../../assets/cdr.png" alt="Login Icon">
+
+        </a>
+        <div class="navbar-icon">
+            <a href="#" class="nav-link">
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accountdetails">Account Details Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calldetails">Call Details Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/smsdetails">Message Details Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 card-container">
+        <h2 class="text-center mb-2">Homepage</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Account Details Form</h5> -->
+
+                        <img class="account" src="../../assets/login1.png" alt="Account Icon" />
+
+                        <a href="/accountdetails" class="btn btn-primary">Add Account Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Call Details Form</h5>  -->
+
+                        <img class="account" src="../../assets/call.png" alt="Call Icon" />
+
+                        <a href="/calldetails" class="btn btn-primary">Add Call Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="account" src="../../assets/msg.png" alt="Sms Icon" />
+                        <a href="/smsdetails" class="btn btn-primary">Add Message Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

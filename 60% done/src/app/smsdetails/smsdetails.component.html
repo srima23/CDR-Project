@@ -1,0 +1,48 @@
+<div class="form-container">
+    <h2>Sms Details Form</h2>
+    <form (ngSubmit)="onSubmit()">
+        <!-- <label for="usageId">Usage ID:</label>
+        <input type="text" id="usageId" name="usageId" [(ngModel)]="newdata.usageId"><br> -->
+
+        <label for="subscriberId">Subscriber ID:</label>
+        <input type="text" id="subscriberId" name="subscriberId" [(ngModel)]="newdata.subscriberId"><br>
+
+        <label for="receiverId">Receiver ID:</label>
+        <input type="text" id="receiverId" name="receiverId" [(ngModel)]="newdata.receiverId"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" [(ngModel)]="newdata.date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" [(ngModel)]="newdata.time"><br>
+
+        <label for="subscriberLocId">Subscriber Location :</label>
+        <input type="text" id="subscriberLocId" name="subscriberLocId" [(ngModel)]="newdata.subscriberLoc"><br>
+
+        <label for="receiverLocId">Receiver Location :</label>
+        <input type="text" id="receiverLocId" name="receiverLocId" [(ngModel)]="newdata.receiverLoc"><br>
+
+        <label for="smsType" class="lab">Sms Type:</label>
+        <select id="smsType" name="smsType" [(ngModel)]="newdata.smsType" class="select">
+            <option value="SMS">SMS</option>
+            <option value="SMS Roaming">Roaming</option>
+            <option value="Data SMS">Data</option>
+        </select>
+
+        <label for="status" class="lab">Status:</label>
+        <select id="status" name="status" [(ngModel)]="newdata.status" class="select">
+            <option value="Send">Send</option>
+            <option value="Unsend">Unsend</option>
+
+        </select>
+
+        <!-- <label for="status">Status :</label>
+        <input type="text" id="status" name="status" [(ngModel)]="newdata.status"><br> -->
+
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <div>{{status.status}}</div>
+</div>

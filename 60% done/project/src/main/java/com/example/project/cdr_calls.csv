@@ -1,0 +1,12 @@
+CallType,Duration,ReceiverLoc,SubscriberLoc,ReceiverId,SubscriberId,Date,Time,CallStatus,Voicemail
+Voice,2,bhubaneswer,hyderabad,2,1,2023-10-11,22:38,missed,true
+Voice,5,Chennai,Bhubaneswer,3,2,2023-10-09,01:19,missed,true
+Voice,5,bbsr,hyd,9,11,2023-05-22,02:43,missed,true
+Voice,5,bbsr,hyd,10,5,2023-05-22,02:43,missed,false
+Voice,5,bbsr,hyd,10,9,2023-05-22,02:43,missed,false
+Voice,5,ff,Pune,5,3,2023-09-28,05:32,Connect,false
+,0,,,3,4,2023-10-12,06:08,Connect,false
+,0,,,3,4,2023-10-12,06:08,Connect,false
+Voice,4,,er,4,3,2023-10-12,02:15,Connect,false
+Voice,4,,er,4,3,2023-10-12,02:15,Connect,false
+Voice,7,ss,uyhyh,9,8,2023-10-06,01:39,Connect,false

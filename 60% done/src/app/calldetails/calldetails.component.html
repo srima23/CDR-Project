@@ -1,0 +1,56 @@
+<div class="form-container">
+    <h2>Call Details Form</h2>
+    <form (ngSubmit)="onSubmit()">
+        <!-- <label for="usageId">Usage ID:</label>
+        <input type="text" id="usageId" name="usageId" [(ngModel)]="newdata.usageId"><br> -->
+
+        <label for="subscriberNum">Subscriber Num:</label>
+        <input type="number" id="subscriberNum" name="subscriberNum" [(ngModel)]="newdata.subscriberNum"><br>
+
+        <label for="receiverNum">Receiver Num:</label>
+        <input type="number" id="receiverNum" name="receiverNum" [(ngModel)]="newdata.receiverNum"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" [(ngModel)]="newdata.date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" [(ngModel)]="newdata.time"><br>
+
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" [(ngModel)]="newdata.duration"><br>
+
+        <label for="subscriberLocId">Subscriber Location :</label>
+        <input type="text" id="subscriberLocId" name="subscriberLocId" [(ngModel)]="newdata.subscriberLoc"><br>
+
+        <label for="receiverLocId">Receiver Location :</label>
+        <input type="text" id="receiverLocId" name="receiverLocId" [(ngModel)]="newdata.receiverLoc"><br>
+
+        <label for="callType" class="lab">Call Type:</label>
+        <select id="callType" name="callType" [(ngModel)]="newdata.callType" class="select">
+            <option value="Voice">Voice</option>
+            <option value="Voice Roaming">Voice Roaming</option>
+            <option value="Data Voice">Data Voice</option>
+
+        </select>
+
+
+        <label for="callStatus" class="lab">Call Status:</label>
+        <select id="callStatus" name="callStatus" [(ngModel)]="newdata.callStatus" class="select">
+            <option value="Connect">Connected</option>
+            <option value="missed">Missed</option>
+            <option value="declined">Declined</option>
+            <option value="notConnect">Not Connected</option>
+
+        </select>
+
+        <div *ngIf="newdata.callStatus !== 'Connect'">
+            <label for="voicemail">Voicemail:</label>
+            <input type="radio" id="voicemail" name="voicemail" [(ngModel)]="newdata.voicemail" value="true"> Yes
+            <input type="radio" id="noVoicemail" name="voicemail" [(ngModel)]="newdata.voicemail" value="false"> No
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <div>{{status.status}}</div>
+</div>
