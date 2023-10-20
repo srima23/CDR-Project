@@ -1,0 +1,4 @@
+SmsType,ReceiverLoc,SubscriberLoc,ReceiverNum,SubscriberNum,Date,Time,Status
+SMS,,,8765432111,987654326,2023-09-29,10:15,Send
+SMS,Mumbai,Gangtok,987654321,8999997654,2023-09-30,12:15,Send
+SMS,Mirzāpur,Mysore,9834567823,3345678967,2023-10-04,10:43,Send

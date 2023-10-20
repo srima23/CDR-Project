@@ -1,0 +1,3 @@
+CallType,Duration,ReceiverLoc,SubscriberLoc,ReceiverNum,SubscriberNum,Date,Time,CallStatus,Voicemail
+Voice,10,Visakhapatnam,Gwalior,9337116656,765349870,2023-10-08,10:12,Connect,false
+Voice,10,Kolkāta,Ahmadābād,9867231456,9337116656,2023-09-28,12:42,missed,true

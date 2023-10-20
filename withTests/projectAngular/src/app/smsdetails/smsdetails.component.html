@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div class="form-container">
+        <h2>Sms Details Form</h2>
+        <form (ngSubmit)="onSubmit()">
+            <!-- <label for="usageId">Usage ID:</label>
+        <input type="text" id="usageId" name="usageId" [(ngModel)]="newdata.usageId"><br> -->
+
+            <label for="subscriberNum">Subscriber Num:</label>
+            <input type="text" id="subscriberNum" name="subscriberNum" [(ngModel)]="newdata.subscriberNum" required
+                pattern="[0-9]{10}">
+
+            <div *ngIf="!isSubscriberNumValid()" class="validation-error">
+                <p>Please enter a valid 10-digit mobile number.</p>
+            </div>
+
+
+            <label for="receiverNum">Receiver Num:</label>
+            <input type="text" id="receiverNum" name="receiverNum" [(ngModel)]="newdata.receiverNum" required
+                pattern="[0-9]{10}">
+
+            <div *ngIf="!isReceiverrNumValid()" class="validation-error">
+                <p>Please enter a valid 10-digit mobile number.</p>
+            </div>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" [(ngModel)]="newdata.date">
+            <div *ngIf="!newdata.date" class="validation-error">
+                <p>Date is required.</p>
+            </div><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" [(ngModel)]="newdata.time"><br>
+
+            <label for="subscriberLocId">Subscriber Location :</label>
+            <input type="text" id="subscriberLocId" name="subscriberLocId" [(ngModel)]="subscriberSearchInput"
+                (input)="filterLocations(subscriberSearchInput, 'subscriber')"><br>
+
+            <div class="location-suggestions"
+                *ngIf="filteredLocations['subscriber'] && filteredLocations['subscriber'].length > 0">
+                <div *ngFor="let location of filteredLocations['subscriber']"
+                    (click)="selectLocation(location, 'subscriber')" style="color: white;">
+                    {{ location.name }}
+                </div>
+            </div>
+
+            <label for="receiverLocId">Receiver Location :</label>
+            <input type="text" id="receiverLocId" name="receiverLocId" [(ngModel)]="receiverSearchInput"
+                (input)="filterLocations(receiverSearchInput, 'receiver')"><br>
+
+            <div class="receiver-suggestions" *ngIf="filteredLocations['receiver'].length > 0">
+                <div *ngFor="let location of filteredLocations['receiver']"
+                    (click)="selectLocation(location, 'receiver')" style="color: white;">
+                    {{ location.name }}
+                </div>
+            </div>
+
+            <label for="smsType" class="lab">Sms Type:</label>
+            <div style="margin-left: 16px; margin-top: 8px; margin-bottom: 10px;">
+                <select id="smsType" name="smsType" [(ngModel)]="newdata.smsType" class="select custom-select">
+                    <option value="SMS">SMS</option>
+                    <option value="SMS Roaming">Roaming</option>
+                    <option value="Data SMS">Data</option>
+                </select>
+            </div>
+
+
+            <label for="status" class="lab">Status:</label>
+            <div style="margin-left: 16px; margin-top: 8px;">
+                <select id="status" name="status" [(ngModel)]="newdata.status" class="select custom-select">
+                    <option value="Send">Send</option>
+                    <option value="Unsend">Unsend</option>
+                </select>
+            </div>
+
+            <!-- <label for="status">Status :</label>
+        <input type="text" id="status" name="status" [(ngModel)]="newdata.status"><br> -->
+
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+        <div>{{status.status}}</div>
+    </div>
+</body>
+
+</html>

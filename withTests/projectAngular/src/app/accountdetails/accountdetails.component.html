@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<body>
+    <div class="form-container">
+        <h2>Account Details Form</h2>
+        <img src="path_to_your_account_icon_image.png" alt="Account Icon" />
+
+
+        <!-- <label for="id">Account ID:</label>
+            <input type="text" id="id" name="id" [(ngModel)]="details.id"><br> -->
+        <form (ngSubmit)="onSubmit()">
+
+            <label for="accountName">Account Name:</label>
+            <input type="text" id="accountName" name="accountName" [(ngModel)]="details.name"
+                (input)="validateAccountName()">
+            <div *ngIf="!isAccountNameValid" class="text-danger">
+                Account Name is required
+            </div>
+
+            <label for="number">Number:</label>
+            <input type="text" id="number" name="number" [(ngModel)]="details.number" (input)="validateNumber()"
+                pattern="[1-9][0-9]{9}">
+            <div *ngIf="!isNumberValid" class="text-danger">
+                Number should be a 10-digit number not starting with 0
+            </div>
+
+
+
+
+            <!-- <label for="number">Number:</label>
+            <input type="text" id="number" name="number" [(ngModel)]="details.number"><br> -->
+
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" [(ngModel)]="searchInput" (input)="filterLocations()">
+
+            <div class="location-suggestions" *ngIf="filteredLocations.length > 0">
+                <div *ngFor="let location of filteredLocations" (click)="selectLocation(location)"
+                    style="color: white;">
+                    {{ location.name }}
+                </div>
+            </div>
+
+
+
+            <div class="gender-radio-container">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" [(ngModel)]="details.gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female" [(ngModel)]="details.gender">
+                <label for="female">Female</label>
+
+
+                <input type="radio" id="others" name="gender" value="Others" [(ngModel)]="details.gender">
+                <label for="others">Trans</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div>{{status.status}}</div>
+
+
+
+    </div>
+</body>

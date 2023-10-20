@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div class="form-container">
+        <h2>Call Details Form</h2>
+        <form (ngSubmit)="onSubmit()">
+            <label for="subscriberNum">Subscriber Num:</label>
+            <input type="text" id="subscriberNum" name="subscriberNum" [(ngModel)]="newdata.subscriberNum" required
+                pattern="[0-9]{10}">
+
+            <div *ngIf="!isSubscriberNumValid()" class="validation-error">
+                <p>Please enter a valid 10-digit mobile number.</p>
+            </div>
+
+
+
+
+
+            <!-- <div class="number-suggestions"
+            *ngIf="filteredNumbers['subscriber'] && filteredNumbers['subscriber'].length > 0">
+            <div *ngFor="let number of filteredNumbers['subscriber']" (click)="selectNumber(number, 'subscriber')">
+                {{ number }}
+            </div>
+        </div>> -->
+
+            <label for="receiverNum">Receiver Num:</label>
+            <input type="text" id="receiverNum" name="receiverNum" [(ngModel)]="newdata.receiverNum" required
+                pattern="[0-9]{10}">
+
+            <div *ngIf="!isReceiverrNumValid()" class="validation-error">
+                <p>Please enter a valid 10-digit mobile number.</p>
+            </div>
+            <!-- <div class="number-suggestions" *ngIf="filteredNumbers['receiver'] && filteredNumbers['receiver'].length > 0">
+            <div *ngFor="let number of filteredNumbers['receiver']" (click)="selectNumber(number, 'receiver')">
+                {{ number }}
+            </div>
+        </div> -->
+
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" [(ngModel)]="newdata.date">
+            <div *ngIf="!newdata.date" class="validation-error">
+                <p>Date is required.</p>
+            </div><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" [(ngModel)]="newdata.time"><br>
+
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" [(ngModel)]="newdata.duration"><br>
+
+            <label for="subscriberLocId">Subscriber Location :</label>
+            <input type="text" id="subscriberLocId" name="subscriberLocId" [(ngModel)]="subscriberSearchInput"
+                (input)="filterLocations(subscriberSearchInput, 'subscriber')"><br>
+
+            <div class="location-suggestions"
+                *ngIf="filteredLocations['subscriber'] && filteredLocations['subscriber'].length > 0">
+                <div *ngFor="let location of filteredLocations['subscriber']"
+                    (click)="selectLocation(location, 'subscriber')" style="color: white;">
+                    {{ location.name }}
+                </div>
+            </div>
+
+            <label for="receiverLocId">Receiver Location :</label>
+            <input type="text" id="receiverLocId" name="receiverLocId" [(ngModel)]="receiverSearchInput"
+                (input)="filterLocations(receiverSearchInput, 'receiver')"><br>
+
+            <div class="receiver-suggestions" *ngIf="filteredLocations['receiver'].length > 0">
+                <div *ngFor="let location of filteredLocations['receiver']"
+                    (click)="selectLocation(location, 'receiver')" style="color: white;">
+                    {{ location.name }}
+                </div>
+            </div>
+            <label for="callType" class="lab">Call Type:</label>
+            <div style="margin-left: 16px; margin-top: 8px; margin-bottom: 10px;">
+                <select id="callType" name="callType" [(ngModel)]="newdata.callType" class="select">
+                    <option value="Voice">Voice</option>
+                    <option value="Voice Roaming">Voice Roaming</option>
+                    <option value="Data Voice">Data Voice</option>
+                </select>
+            </div>
+
+            <label for="callStatus" class="lab">Call Status:</label>
+            <div style="margin-left: 16px; margin-top: 8px;">
+                <select id="callStatus" name="callStatus" [(ngModel)]="newdata.callStatus" class="select">
+                    <option value="Connect">Connected</option>
+                    <option value="missed">Missed</option>
+                    <option value="declined">Declined</option>
+                    <option value="notConnect">Not Connected</option>
+                </select>
+            </div>
+
+            <div *ngIf="newdata.callStatus !== 'Connect'">
+                <label for="voicemail">Voicemail:</label>
+                <input type="radio" id="voicemail" name="voicemail" [(ngModel)]="newdata.voicemail" value="true"> Yes
+                <input type="radio" id="noVoicemail" name="voicemail" [(ngModel)]="newdata.voicemail" value="false"> No
+            </div>
+
+            <button type="submit">Submit</button>
+
+            <div>{{status.status}}</div>
+        </form>
+    </div>
+</body>
+
+</html>
