@@ -1,0 +1,14 @@
+CallType,Duration,ReceiverLoc,SubscriberLoc,ReceiverNum,SubscriberNum,Date,Time,CallStatus,Voicemail
+Voice,10,Visakhapatnam,Gwalior,9337116656,765349870,2023-10-08,10:12,Connect,false
+Voice,10,Kolkāta,Ahmadābād,9867231456,9337116656,2023-09-28,12:42,missed,true
+Voice,10,Farīdābād,Srīnagar,6678545376,9872341567,2023-10-03,18:29,missed,true
+Voice,7,Ahmadābād,Farīdābād,7777777777,9337116656,2023-10-05,15:38,Connect,false
+Voice,7,Ahmadābād,Farīdābād,7777777777,9337116656,2023-10-05,15:38,Connect,false
+Voice,9,Chandīgarh,Sūrat,9867231456,9872341567,2023-09-28,04:30,Connect,false
+Voice,9,Chandīgarh,Sūrat,9867231456,9872341567,2023-09-28,04:30,Connect,false
+Voice,9,Chinchvad,Cuttack,987636366,8999997654,2023-09-27,00:36,missed,true
+Voice,9,Chinchvad,Cuttack,987636366,8999997654,2023-09-27,00:36,missed,true
+Voice,9,Bhayandar,Thāne,9865555555,9872341567,2023-10-06,00:38,Connect,false
+Voice,9,Bhayandar,Thāne,9865555555,9872341567,2023-10-06,00:38,Connect,false
+Voice,9,Bhayandar,Thāne,9865555555,9872341567,2023-10-06,00:38,Connect,false
+Voice,9,Bhayandar,Thāne,9865555555,9872341567,2023-10-06,00:38,Connect,false
