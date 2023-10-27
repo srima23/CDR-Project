@@ -6,5 +6,4 @@
 - [x] ER diagram/Database model visualiasation
 - [X] Test Coverage Reports
 
-# Git Repo
-https://github.com/srima23/CDR-Project
+
