@@ -391,17 +391,18 @@ This endpoint allows you to get the token.
   **Tags:** "api-auth-controller
   **Operation ID:** token
 
-### Request Body
-       {
-        "content": {
-          "application/json": 
-            "schema":{
-              "username": "string",
-              "password": "string"
-                 },
-           "required": true
-                     }
-          },
+  ### Request Body
+```json
+{
+  "content":
+         "application/json"
+     "schema": {
+         "username": "string",
+         "password": "string"
+        },
+   "required": true
+}
+```
                   
 ### Responses
 - **200 - OK**
@@ -425,17 +426,18 @@ This endpoint allows you register into the website.
   **Tags:** "api-auth-controller
   **Operation ID:** registerUser
 
-### Request Body
-       {
-        "content": {
-          "application/json": 
-                 "schema": {
-        "username": "string",
-        "password": "string"
-                             }
-                          },
-               "required": true
-             },
+  ### Request Body
+```json
+{
+  "content":
+         "application/json"
+     "schema": {
+         "username": "string",
+         "password": "string"
+        },
+   "required": true
+}
+```
 
 ### Responses
 - **200 - OK**
@@ -471,6 +473,7 @@ This endpoint allows you register into the website.
  ```
 ### Description
 This is the message details format in the form.
+
 {
     "type": "object",
     "properties": {
@@ -539,6 +542,7 @@ This is the customer details format in the form.
 }
  ### Description
 This is the call details format in the form.
+
 {
     "type": "object",
     "properties": {
