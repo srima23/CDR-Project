@@ -400,7 +400,8 @@ This endpoint allows you to get the token.
               "password": "string"
                  },
            "required": true
-                  },
+                     }
+          },
                   
 ### Responses
 - **200 - OK**
