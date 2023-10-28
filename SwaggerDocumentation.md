@@ -401,18 +401,20 @@ This endpoint allows you to get the token.
                  },
            "required": true
                   },
- ### Responses
-
+                  
+### Responses
 - **200 - OK**
-    "content": {
-      "*/*": {
-       "schema": {
-        "username": "string",
-        "password": "string"
+```json
+  {
+   "content": {
+     "*/*": {
+      "schema": {
+       "token": "string"
       }
     }
-  },
-
+  }
+}
+```
 
 ### Description
 This endpoint allows you register into the website.
