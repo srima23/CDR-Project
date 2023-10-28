@@ -267,26 +267,24 @@ This endpoint allows you to save the call details into the database.
 
 ### Request Body
      ```json
-      {
-        "content": {
-          "application/json": {
-                 "schema":{
-  "subscriberNum": "string",
-  "receiverNum": "string",
-  "date": "string",
-  "time": "string",
-  "duration": 0,
-  "subscriberLoc": "string",
-  "receiverLoc": "string",
-  "callType": "string",
-  "callStatus": "string",
-  "voicemail": true
-                      }
-                },
-            "required": true
-        }
+     {
+  "content":
+       "application/json"
+     "schema": {
+       "subscriberNum": "string",
+       "receiverNum": "string",
+       "date": "string",
+       "time": "string",
+       "duration": 0,
+       "subscriberLoc": "string",
+       "receiverLoc": "string",
+       "callType": "string",
+       "callStatus": "string",
+       "voicemail": true
+          },
+    "required": true
+}
     ```
-
 ### Responses
 
 - **200 - OK**
