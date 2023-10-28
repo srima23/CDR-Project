@@ -264,25 +264,26 @@ This endpoint allows you to save the call details into the database.
 - **Operation ID:** saveCDRCallData
 
 ### Request Body
-     ```json
-     {
+```json
+{
   "content":
-       "application/json"
+         "application/json"
      "schema": {
-       "subscriberNum": "string",
-       "receiverNum": "string",
-       "date": "string",
-       "time": "string",
-       "duration": 0,
-       "subscriberLoc": "string",
-       "receiverLoc": "string",
-       "callType": "string",
-       "callStatus": "string",
-       "voicemail": true
-          },
-    "required": true
+         "subscriberNum": "string",
+         "receiverNum": "string",
+         "date": "string",
+         "time": "string",
+         "duration": 0,
+         "subscriberLoc": "string",
+         "receiverLoc": "string",
+         "callType": "string",
+         "callStatus": "string",
+         "voicemail": true
+        },
+   "required": true
 }
-    ```
+```
+
 ### Responses
 
 - **200 - OK**
