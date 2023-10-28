@@ -352,26 +352,24 @@ This endpoint allows you to upload the customers csv file.
   **Operation ID:** uploadCustomersCSVFile
 
 ### Request Body
-     ```json
-      {
-        "content": {
-          "application/json": {
-              "schema":{
-                 "required": [
-                  "file"
-               ],
-               "type": "object",
-                "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "binary"
-                  }
-               }
-           }
-        }
-     }
-    ```
-
+```json
+{
+ "content":
+ "application/json"
+  "schema": {
+     "required": [
+       "file"
+        ],
+        "type": "object",
+         "properties": {
+          "file": {
+            "type": "string",
+            "format": "binary"
+            }
+          }
+       } 
+  }
+```
 
 ### Responses
 - **200 - OK**
