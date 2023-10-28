@@ -309,25 +309,24 @@ This endpoint allows you to upload the call csv files.
 
 
 ### Request Body
-     ```json
-      {
-        "content": {
-          "application/json": {
-               "schema":{
-                   "required": [
-                       "file"
-                      ],
-                      "type": "object",
-                      "properties": {
-                         "file": {
-                            "type": "string",
-                            "format": "binary"
-                           }
-                        }
-                    }
-                }
+```json
+{
+ "content":
+ "application/json"
+  "schema": {
+     "required": [
+       "file"
+        ],
+        "type": "object",
+         "properties": {
+          "file": {
+            "type": "string",
+            "format": "binary"
             }
-     ```
+          }
+       } 
+  }
+```
 ### Responses
 
 - **200 - OK**
