@@ -17,8 +17,8 @@ This documentation provides information about the OpenAPI definition for the API
 
 ### Request Body
 ```json
-   {
-- Content Type: `application/json`{
+{
+ "content": "application/json"
   "schema": {
      "required": [
        "file"
@@ -32,7 +32,8 @@ This documentation provides information about the OpenAPI definition for the API
           }
        } 
   }
-        ```
+```
+
 ### Responses
 
 - **200 - OK**
