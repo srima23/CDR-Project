@@ -373,23 +373,22 @@ This endpoint allows you to upload the customers csv file.
            }
         }
      }
-   ```
+    ```
 
- ### Responses
 
+### Responses
 - **200 - OK**
- ```json
+```json
   {
-    "content": {
-      "*/*": {
-       "schema": {
-        "status": "string"
+   "content": {
+     "*/*": {
+      "schema": {
+       "file": "string"
       }
     }
   }
-} 
-   ```
-
+}
+```
 ### Description
 This endpoint allows you to get the token.
 
@@ -402,11 +401,11 @@ This endpoint allows you to get the token.
        {
         "content": {
           "application/json": 
-                     {
-         "username": "string",
-         "password": "string"
+            "schema":{
+              "username": "string",
+              "password": "string"
                  },
-        "required": true
+           "required": true
                   },
  ### Responses
 
@@ -469,10 +468,12 @@ This endpoint allows you register into the website.
                "items": {
                     "type": "string"
                         }
-                  }
+                   }
                }
             }
-            ```
+ ```
+### Description
+This is the message details format in the form.
 {
     "type": "object",
     "properties": {
@@ -577,8 +578,8 @@ This is the call details format in the form.
         }
     }
 }
- ### Description
-This is the user details format in the form.
+### Description
+This is the message details format in the form.
 
 {
     "type": "object",
@@ -591,6 +592,9 @@ This is the user details format in the form.
         }
     }
 }
+
+### Description
+This is the token format..
 
 {
     "type": "object",
