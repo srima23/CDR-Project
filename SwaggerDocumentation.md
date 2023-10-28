@@ -212,7 +212,7 @@ This endpoint allows you to save the customers details into a customers csv file
  ```
 
 ### Description
-This endpoint allows you to save the call details into a customers csv file.
+This endpoint allows you to save the call details into a call csv file.
 
 - **URL**: `/api/home/{saveCallCDRtoCSV}`
 - **Method**: POST
@@ -236,9 +236,8 @@ This endpoint allows you to save the call details into a customers csv file.
              "callType": "string",
              "callStatus": "string",
              "voicemail": true
-}
-                }
-            },
+                         }
+                     },
             "required": true
         }
         ```
@@ -259,7 +258,7 @@ This endpoint allows you to save the call details into a customers csv file.
  ```
 
 ### Description
-This endpoint allows you to save the customers details into a customers csv file.
+This endpoint allows you to save the call details into the database.
 
 - **URL**: `/api/home/{saveCallCDR}`
 - **Method**: POST
@@ -282,12 +281,11 @@ This endpoint allows you to save the customers details into a customers csv file
   "callType": "string",
   "callStatus": "string",
   "voicemail": true
-}
-                }
-            },
+                      }
+                },
             "required": true
         }
-        ```
+    ```
 
 ### Responses
 
@@ -305,7 +303,7 @@ This endpoint allows you to save the customers details into a customers csv file
  ```
 
 ### Description
-This endpoint allows you to save the customers details into a customers csv file.
+This endpoint allows you to upload the call csv files.
 
 - **URL**: `/api/home/{savecallupload}`
 - **Method**: POST
@@ -332,8 +330,7 @@ This endpoint allows you to save the customers details into a customers csv file
                     }
                 }
             }
-        }
-        ```
+     ```
 ### Responses
 
 - **200 - OK**
@@ -350,7 +347,7 @@ This endpoint allows you to save the customers details into a customers csv file
    ```
 
 ### Description
-This endpoint allows you to save the customers details into a customers csv file.
+This endpoint allows you to upload the customers csv file.
 
 - **URL**: `/api/home/{accountupload}`
 - **Method**: POST
@@ -376,8 +373,7 @@ This endpoint allows you to save the customers details into a customers csv file
            }
         }
      }
- }
-        ```
+   ```
 
  ### Responses
 
@@ -395,7 +391,7 @@ This endpoint allows you to save the customers details into a customers csv file
    ```
 
 ### Description
-This endpoint allows you to save the customers details into a customers csv file.
+This endpoint allows you to get the token.
 
 - **URL**: `/api/auth/{token}`
 - **Method**: POST
@@ -485,7 +481,9 @@ This endpoint allows you register into the website.
         }
     }
 }
-
+### Description
+This is the message details format in the form.
+         
 {
     "type": "object",
     "properties": {
@@ -515,6 +513,9 @@ This endpoint allows you register into the website.
         }
     }
 }
+ ### Description
+This is the customer details format in the form.
+
 {
     "type": "object",
     "properties": {
@@ -536,6 +537,8 @@ This endpoint allows you register into the website.
         }
     }
 }
+ ### Description
+This is the call details format in the form.
 {
     "type": "object",
     "properties": {
@@ -572,6 +575,8 @@ This endpoint allows you register into the website.
         }
     }
 }
+ ### Description
+This is the user details format in the form.
 
 {
     "type": "object",
