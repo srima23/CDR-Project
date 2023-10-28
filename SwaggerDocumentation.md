@@ -442,15 +442,14 @@ This endpoint allows you register into the website.
              },
 
 ### Responses
-
 - **200 - OK**
     "content": {
       "*/*": {
        "schema": {
-            "type": "string"
-                  }
-              }
-        },
+        "type": "string"
+      }
+    }
+  },
 
 ### Description
 
@@ -482,6 +481,7 @@ This endpoint allows you register into the website.
         }
     }
 }
+
 ### Description
 This is the message details format in the form.
          
@@ -514,7 +514,8 @@ This is the message details format in the form.
         }
     }
 }
- ### Description
+
+### Description
 This is the customer details format in the form.
 
 {
