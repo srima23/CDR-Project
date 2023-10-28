@@ -402,10 +402,11 @@ This endpoint allows you to get the token.
        {
         "content": {
           "application/json": 
-                     "$ref": "#/components/schemas/LoginBody"
-                      },
-
-                    "required": true
+                     {
+         "username": "string",
+         "password": "string"
+                 },
+        "required": true
                   },
  ### Responses
 
