@@ -219,28 +219,26 @@ This endpoint allows you to save the call details into a call csv file.
 - **Tags:** cd-rcall-controller
 - **Operation ID:** saveCDRtoCSV_2
 
-
 ### Request Body
-        ```json
-        {
-            "content": {
-                "application/json": {
-                    "schema":{
-             "subscriberNum": "string",
-             "receiverNum": "string",
-             "date": "string",
-             "time": "string",
-             "duration": 0,
-             "subscriberLoc": "string",
-             "receiverLoc": "string",
-             "callType": "string",
-             "callStatus": "string",
-             "voicemail": true
-                         }
-                     },
-            "required": true
-        }
-        ```
+```json
+{
+  "content":
+         "application/json"
+     "schema": {
+         "subscriberNum": "string",
+         "receiverNum": "string",
+         "date": "string",
+         "time": "string",
+         "duration": 0,
+         "subscriberLoc": "string",
+         "receiverLoc": "string",
+         "callType": "string",
+         "callStatus": "string",
+         "voicemail": true
+        },
+   "required": true
+}
+```
 
 ### Responses
 
