@@ -17,7 +17,8 @@ This endpoint allows you to upload a message csv file.
 ### Request Body
 ```json
 {
- "content": "application/json"
+ "content":
+ "application/json"
   "schema": {
      "required": [
        "file"
@@ -59,22 +60,21 @@ This endpoint allows you to save the message details into a message csv file.
 ### Request Body
 ```json
 {
-  "content": "application/json"
+  "content":
+         "application/json"
      "schema": {
-                "subscriberNum": "string",
-                "receiverNum": "string",
-                "date": "string",
-                "time": "string",
-                "subscriberLoc": "string",
-                "receiverLoc": "string",
-                "smsType": "string",
-                "status": "string"
-        }
-     }
-  },
+         "subscriberNum": "string",
+         "receiverNum": "string",
+         "date": "string",
+         "time": "string",
+         "subscriberLoc": "string",
+         "receiverLoc": "string",
+         "smsType": "string",
+         "status": "string"
+        },
    "required": true
 }
-    ```
+```
 
 ### Responses
 
@@ -102,19 +102,18 @@ This endpoint allows you to save the message details into the database.
 ### Request Body
 ```json
 {
-  "content": "application/json"
+  "content":
+       "application/json"
      "schema": {
-                 "subscriberNum": "string",
-                 "receiverNum": "string",
-                 "date": "string",
-                 "time": "string",
-                 "subscriberLoc": "string",
-                 "receiverLoc": "string",
-                 "smsType": "string",
-                 "status": "string"
-          }
-       }
-   },
+       "subscriberNum": "string",
+       "receiverNum": "string",
+       "date": "string",
+       "time": "string",
+       "subscriberLoc": "string",
+       "receiverLoc": "string",
+       "smsType": "string",
+       "status": "string"
+          },
     "required": true
 }
 ```
@@ -148,14 +147,12 @@ This endpoint allows you to save the customers details into a customers csv file
 {
   "content": "application/json"
      "schema": {
-   "id": 0,
-   "name": "string",
-   "number": "string",
-   "location": "string",
-   "gender": "string"
-               }
-           }
-         },
+         "id": 0,
+         "name": "string",
+         "number": "string",
+         "location": "string",
+         "gender": "string"
+               },
     "required": true
   }
    ```
@@ -189,14 +186,12 @@ This endpoint allows you to save the customers details into a customers csv file
 {
   "content": "application/json"
      "schema": {
-  "id": 0,
-  "name": "string",
-  "number": "string",
-  "location": "string",
-  "gender": "string"
-            }
-           }
-         },
+         "id": 0,
+         "name": "string",
+         "number": "string",
+         "location": "string",
+         "gender": "string"
+            },
     "required": true
   }
    ```
@@ -217,7 +212,7 @@ This endpoint allows you to save the customers details into a customers csv file
  ```
 
 ### Description
-This endpoint allows you to save the customers details into a customers csv file.
+This endpoint allows you to save the call details into a customers csv file.
 
 - **URL**: `/api/home/{saveCallCDRtoCSV}`
 - **Method**: POST
@@ -231,16 +226,16 @@ This endpoint allows you to save the customers details into a customers csv file
             "content": {
                 "application/json": {
                     "schema":{
-  "subscriberNum": "string",
-  "receiverNum": "string",
-  "date": "string",
-  "time": "string",
-  "duration": 0,
-  "subscriberLoc": "string",
-  "receiverLoc": "string",
-  "callType": "string",
-  "callStatus": "string",
-  "voicemail": true
+             "subscriberNum": "string",
+             "receiverNum": "string",
+             "date": "string",
+             "time": "string",
+             "duration": 0,
+             "subscriberLoc": "string",
+             "receiverLoc": "string",
+             "callType": "string",
+             "callStatus": "string",
+             "voicemail": true
 }
                 }
             },
