@@ -6,9 +6,8 @@ This documentation provides information about the OpenAPI definition for the API
 
 **Security**: Bearer AuthenticationOpenAPI definition
 
-## Upload Sms Information
-
 ### Description
+This endpoint allows you to upload a message csv file.
 
 - **URL**: `/api/home/{smsupload}`
 - **Method**: POST
@@ -48,6 +47,9 @@ This documentation provides information about the OpenAPI definition for the API
   }
 }
  ```
+
+### Description
+This endpoint allows you to save the message details into a message csv file.
 
 - **URL**: `/api/home/{saveSmsCDRtoCSV}`
 - **Method**: POST
@@ -89,6 +91,8 @@ This documentation provides information about the OpenAPI definition for the API
 }
 ```
 
+### Description
+This endpoint allows you to save the message details into the database.
 
 - **URL**: `/api/home/{saveSmsCDR}`
 - **Method**: POST
@@ -130,6 +134,9 @@ This documentation provides information about the OpenAPI definition for the API
 }
 ```
 
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
+
 - **URL**: `/api/home/{saveCustomers}`
 - **Method**: POST
 - **Tags:** customers-controller
@@ -168,6 +175,8 @@ This documentation provides information about the OpenAPI definition for the API
 }
  ```
 
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
 
 - **URL**: `/api/home/{saveCustomerCDRtoCSV}`
 - **Method**: POST
@@ -207,6 +216,8 @@ This documentation provides information about the OpenAPI definition for the API
 }
  ```
 
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
 
 - **URL**: `/api/home/{saveCallCDRtoCSV}`
 - **Method**: POST
@@ -252,6 +263,8 @@ This documentation provides information about the OpenAPI definition for the API
 }
  ```
 
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
 
 - **URL**: `/api/home/{saveCallCDR}`
 - **Method**: POST
@@ -295,6 +308,10 @@ This documentation provides information about the OpenAPI definition for the API
   }
 }
  ```
+
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
+
 - **URL**: `/api/home/{savecallupload}`
 - **Method**: POST
 - **Tags:** cd-rcall-controller
@@ -336,6 +353,9 @@ This documentation provides information about the OpenAPI definition for the API
   }
 } 
    ```
+
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
 
 - **URL**: `/api/home/{accountupload}`
 - **Method**: POST
@@ -379,6 +399,8 @@ This documentation provides information about the OpenAPI definition for the API
 } 
    ```
 
+### Description
+This endpoint allows you to save the customers details into a customers csv file.
 
 - **URL**: `/api/auth/{token}`
 - **Method**: POST
@@ -407,6 +429,8 @@ This documentation provides information about the OpenAPI definition for the API
   },
 
 
+### Description
+This endpoint allows you register into the website.
 
 - **URL**: `/api/auth/{register}`
 - **Method**: POST
@@ -436,7 +460,8 @@ This documentation provides information about the OpenAPI definition for the API
               }
         },
 
-### 
+### Description
+
 - **Method**: GET
 - **Tags:** Clients
 - **Summary:** This method is used to get the clients.
